@@ -16,10 +16,9 @@ estados = list(df['state'].unique())
 state = st.sidebar.selectbox(
      'Qual o estado?',
      (estados))
-#state  = 'MS'
+
 
 #SELEÇÃO DA COLUNA
-#column ='Casos por 100 mil habitantes'
 colunas = ['Novos óbitos','Novos casos','Óbitos por 100 mil habitantes','Casos por 100 mil habitantes']
 column = st.sidebar.selectbox('Qual o tipo de informação?',(colunas))
 
